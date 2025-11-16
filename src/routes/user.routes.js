@@ -20,5 +20,6 @@ userRouter.route("/logout").post(logoutUser);
 userRouter.route("/profile").get(verifyJWT, userProfile);
 userRouter.route("/verifyOTP").post(verifyEmailOTP);
 userRouter.route("/sendOTP").post(sendOTPAgain);
+userRouter.route("/validateToken").get(validateToken);
 
 export default userRouter;

@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 
 
 
+
 const userSchema = new mongoose.Schema(
   {
     name: {
@@ -16,10 +17,6 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-    },
-    history:{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "History",
     },
     verified: {
       type: Boolean,
